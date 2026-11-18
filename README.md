@@ -36,17 +36,17 @@ React・TypeScriptは，サンプルで使用する範囲を説明します。�
 
 ## 使用する技術
 
-| 技術 | 役割 |
-|---|---|
-| React | コンポーネントによる画面の構築 |
-| TypeScript | フロントエンドの型定義と実装 |
-| Vite | 開発用サーバーと本番用ビルド |
-| Tailwind CSS | 画面のスタイリング |
-| vite-plugin-singlefile | JavaScript・CSSのHTMLへの集約 |
-| React Router | Hash方式によるSPAの画面遷移 |
-| Google Apps Script | HTMLの配信とサーバー側の処理 |
-| clasp | ローカルファイルとGASプロジェクトの連携 |
-| Git | コードとドキュメントの変更管理 |
+| 技術                   | 役割                                    |
+|------------------------|-----------------------------------------|
+| React                  | コンポーネントによる画面の構築          |
+| TypeScript             | フロントエンドの型定義と実装            |
+| Vite                   | 開発用サーバーと本番用ビルド            |
+| Tailwind CSS           | 画面のスタイリング                      |
+| vite-plugin-singlefile | JavaScript・CSSのHTMLへの集約           |
+| React Router           | Hash方式によるSPAの画面遷移             |
+| Google Apps Script     | HTMLの配信とサーバー側の処理            |
+| clasp                  | ローカルファイルとGASプロジェクトの連携 |
+| Git                    | コードとドキュメントの変更管理          |
 
 本ガイドの応用編では，Tailwind CSS v4系，React Router v7系を指定した手順を掲載しています。
 
@@ -74,26 +74,26 @@ flowchart TD
 
 環境構築からGASへの公開・更新までを順番に進めます。
 
-| 章 | 内容 |
-|---|---|
-| [001. 全体像](docs/basics/001-overview.md) | 目的，使用技術，実行環境，開発から公開までの流れ |
-| [002. 開発環境の準備](docs/basics/002-setup.md) | macOS・zsh，エディタ，Git，Node.js，npm，clasp，Google認証 |
-| [003. プロジェクトの作成](docs/basics/003-create-project.md) | React・TypeScriptの初期化，最小画面，ビルド設定，GAS側のコード |
-| [004. ローカルでの実行とデバッグ](docs/basics/004-local-debug.md) | 開発用サーバー，開発者ツール，型チェック，ビルド結果の確認 |
-| [005. GASへのデプロイ](docs/basics/005-deploy.md) | 配置準備，claspでの反映，初回公開，既存URLを維持した更新 |
+| 章                                                                | 内容                                                           |
+|-------------------------------------------------------------------|----------------------------------------------------------------|
+| [001. 全体像](docs/basics/001-overview.md)                        | 目的，使用技術，実行環境，開発から公開までの流れ               |
+| [002. 開発環境の準備](docs/basics/002-setup.md)                   | macOS・zsh，エディタ，Git，Node.js，npm，clasp，Google認証     |
+| [003. プロジェクトの作成](docs/basics/003-create-project.md)      | React・TypeScriptの初期化，最小画面，ビルド設定，GAS側のコード |
+| [004. ローカルでの実行とデバッグ](docs/basics/004-local-debug.md) | 開発用サーバー，開発者ツール，型チェック，ビルド結果の確認     |
+| [005. GASへのデプロイ](docs/basics/005-deploy.md)                 | 配置準備，claspでの反映，初回公開，既存URLを維持した更新       |
 
 ### 応用編
 
 基本編で作成したアプリケーションを段階的に拡張し，設計・運用の注意点を確認します。
 
-| 章 | 内容 |
-|---|---|
-| [101. Tailwind CSSによるスタイリング](docs/advanced/101-tailwindcss.md) | Viteプラグインの導入，スタイルの置き換え，レスポンシブ対応 |
-| [102. React・TypeScriptによるフロントエンド開発](docs/advanced/102-modern-frontend.md) | 共通部品，Props，カスタムフック，状態の配置 |
-| [103. SPAと画面遷移](docs/advanced/103-spa-application.md) | HashRouter，共通レイアウト，ルート定義，状態保持 |
-| [104. Googleサービスとの連携](docs/advanced/104-use-google-services.md) | スプレッドシートの読み取り，非同期通信，レスポンス検証，モック |
-| [105. GASの制約と注意点](docs/advanced/105-disadvantage-of-gas.md) | 割り当て，iframe，権限，同時更新，運用と採用判断 |
-| [106. GASアプリケーションのアーキテクチャ](docs/advanced/106-gas-architecture.md) | 責務分離，API境界，データアクセス，設定，テスト，環境分離 |
+| 章                                                                                     | 内容                                                           |
+|----------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| [101. Tailwind CSSによるスタイリング](docs/advanced/101-tailwindcss.md)                | Viteプラグインの導入，スタイルの置き換え，レスポンシブ対応     |
+| [102. React・TypeScriptによるフロントエンド開発](docs/advanced/102-modern-frontend.md) | 共通部品，Props，カスタムフック，状態の配置                    |
+| [103. SPAと画面遷移](docs/advanced/103-spa-application.md)                             | HashRouter，共通レイアウト，ルート定義，状態保持               |
+| [104. Googleサービスとの連携](docs/advanced/104-use-google-services.md)                | スプレッドシートの読み取り，非同期通信，レスポンス検証，モック |
+| [105. GASの制約と注意点](docs/advanced/105-disadvantage-of-gas.md)                     | 割り当て，iframe，権限，同時更新，運用と採用判断               |
+| [106. GASアプリケーションのアーキテクチャ](docs/advanced/106-gas-architecture.md)      | 責務分離，API境界，データアクセス，設定，テスト，環境分離      |
 
 ## 読み進め方
 
